@@ -5,7 +5,7 @@ const moment = require("moment");
 const random = require("random");
 
 // Change the working directory to where your local repository is located
-const git = simpleGit("/Users/rohitaggarwal/Desktop/test/GitHub_Graph");
+const git = simpleGit("/Users/roshanbagde/GitHub_Graph");
 
 const makeCommit = (n) => {
   if (n === 0) {
@@ -23,7 +23,7 @@ const makeCommit = (n) => {
   const x = random.int(0, 54);
   const y = random.int(0, 6);
   const DATE = moment()
-    .subtract(0, "y")
+    .subtract(2, "y")
     .add(1, "d")
     .add(x, "w")
     .add(y, "d")
